@@ -1,0 +1,26 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" id="ic_arr_hor">
+    <circle cx="10.5" cy="10.5" r="9.5" transform="rotate(-90 10.5 10.5)" stroke="currentColor" stroke-width="2" fill="none"></circle>
+    <path d="M8.5 15.5L13.5 10.5L8.5 5.5" stroke="currentColor" stroke-width="2" fill="none"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 25" id="ic_close">
+    <rect x="6" width="32" height="3" rx="1.5" transform="rotate(45 6 0)" fill="currentColor"></rect>
+    <rect x="4" y="23" width="32" height="3" rx="1.5" transform="rotate(-45 4 23)" fill="currentColor"></rect>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22" id="ic_encyclopedia">
+    <path d="M10.0625 21.5217C9.99819 21.5217 9.93387 21.5077 9.87437 21.4793L0.686875 17.1043C0.534625 17.0316 0.4375 16.8781 0.4375 16.7092V3.14669C0.4375 2.99663 0.5145 2.85707 0.641375 2.77657C0.767812 2.69651 0.9275 2.68732 1.06313 2.75163L10.0625 7.03694L19.0619 2.75119C19.1975 2.68732 19.3563 2.69607 19.4832 2.77657C19.6105 2.85707 19.6875 2.99663 19.6875 3.14669V16.7092C19.6875 16.8781 19.5904 17.0316 19.4381 17.1043L10.2506 21.4793C10.1911 21.5077 10.1268 21.5217 10.0625 21.5217ZM2 16.0002L10.0625 20.0005L18.5 15.8337V4.50049L10.2506 8.57755C10.1321 8.63399 9.99337 8.63399 9.87481 8.57755L2 4.50024V16.0002Z" fill="currentColor"></path>
+    <path d="M9.87641 6.46413L2.24947 2.83245C2.03116 2.72832 1.93885 2.46713 2.04254 2.24926C2.14666 2.03095 2.40741 1.93951 2.62572 2.04188L9.87641 5.49507L17.1271 2.04188C17.3458 1.93951 17.6062 2.03095 17.7103 2.24926C17.814 2.46713 17.7217 2.72832 17.5033 2.83245L9.87641 6.46413Z" fill="currentColor"></path>
+    <path d="M10.9004 8H9.40039V21.0837H10.9004V8Z" fill="currentColor"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 18" id="ic_menu">
+    <rect x="0.5" y="0.5" width="32" height="3" rx="1.5" fill="currentColor"></rect>
+    <rect x="0.5" y="7.5" width="32" height="3" rx="1.5" fill="currentColor"></rect>
+    <rect x="0.5" y="14.5" width="32" height="3" rx="1.5" fill="currentColor"></rect>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="ic_zoom">
+    <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="currentColor" stroke-opacity="0.76" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round" fill="none"></path>
+    <path d="M25.9697 27.0303C26.2626 27.3232 26.7374 27.3232 27.0303 27.0303C27.3232 26.7374 27.3232 26.2626 27.0303 25.9697L25.9697 27.0303ZM17.4697 18.5303L25.9697 27.0303L27.0303 25.9697L18.5303 17.4697L17.4697 18.5303Z" fill="currentColor" fill-opacity="0.76"></path>
+    <path d="M6 11H16" stroke="currentColor" stroke-opacity="0.76" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round" fill="none"></path>
+    <path d="M11 6V16" stroke="currentColor" stroke-opacity="0.76" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round" fill="none"></path>
+  </symbol>
+</svg>
