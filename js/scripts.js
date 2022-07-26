@@ -115,7 +115,7 @@ $(window).scroll(() => {
 		articleHeight = $('.article_info').height(),
 		progress = 100 * pixels / articleHeight
 
-	if (progress >= 0 && progress <= 100) {
+	if (progress >= 0 && progress <= 100 && progress > $('aside .progress .val span').text()) {
 		$('aside .progress .bar > *').css('width', progress + '%')
 		$('aside .progress .val span').text(progress.toFixed(0))
 	}
