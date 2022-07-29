@@ -1179,12 +1179,12 @@ aside .progress .bar > *
     position: absolute;
     z-index: -1;
     top: -37px;
-    right: 50%;
+    right: 0;
 
     display: block;
 
     width: 389px;
-    margin-right: -1142px;
+    margin-right: -142px;
 
     pointer-events: none;
 }
@@ -2743,8 +2743,13 @@ aside .progress .bar > *
 
 .articles_map .anchors.bottom
 {
-    margin-top: 86px;
     margin-bottom: -8px;
+    padding-top: 86px;
+}
+
+.articles_map .anchors.hide
+{
+    display: none;
 }
 
 .articles_map .anchors > *
@@ -2760,6 +2765,9 @@ aside .progress .bar > *
     font-weight: 300;
     line-height: 150%;
 
+    position: relative;
+    z-index: 3;
+
     padding: 9px 21px 8px;
 
     transition: .2s linear;
@@ -2768,49 +2776,61 @@ aside .progress .bar > *
     border-radius: 11px;
 }
 
-.articles_map .anchors .btn:hover
+.articles_map .anchors .btn:before
+{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: -3px;
+    left: 0;
+
+    display: block;
+
+    width: 112px;
+    max-width: 90%;
+    height: 16px;
+    margin: auto;
+
+    content: '';
+    transition: opacity .2s linear;
+
+    opacity: 0;
+    border-radius: 20px;
+    background: rgba(54, 155, 67, .69);
+
+    filter: blur(9px);
+}
+
+
+.articles_map .anchors .btn:hover,
+.articles_map .anchors .btn.active
 {
     color: #fff;
 
     background: #369b43;
 }
 
-
-.articles_map .anchors .all_link
+.articles_map .anchors .btn.active:before
 {
-    margin-left: 38px;
+    opacity: 1;
 }
 
-.articles_map .anchors .all_link a
+
+.articles_map .anchors .all_btn
 {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 150%;
-
-    display: inline-block;
-
-    padding: 9px 21px 8px;
-
-    transition: background .2s linear;
-    vertical-align: top;
-    text-decoration: none;
-
-    border: 1px solid #369b43;
-    border-radius: 11px;
-    background: #369b43;
-}
-
-.articles_map .anchors .all_link a:hover
-{
-    background: #1a8a28;
+    margin-left: 22px;
 }
 
 
 
-.articles_map .category + .category
+.articles_map .categories
 {
-    margin-top: 86px;
+    margin-bottom: -86px;
+}
+
+.articles_map .category
+{
+    margin-bottom: 86px;
 }
 
 

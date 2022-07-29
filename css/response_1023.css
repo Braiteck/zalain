@@ -26,6 +26,13 @@
     /*------------
         Header
     ------------*/
+    .header_wrap,
+    header
+    {
+        margin-bottom: 31px;
+    }
+
+
     header
     {
         padding: 26px 0;
@@ -211,6 +218,21 @@
     .content .page_head
     {
         margin-bottom: 85px;
+    }
+
+
+    .page_head .bg
+    {
+        top: -21px;
+
+        width: 188px;
+        margin-right: -74px;
+    }
+
+
+    .page_title
+    {
+        margin-top: 61px;
     }
 
 
@@ -452,6 +474,22 @@
     .sources
     {
         padding: 0 40px;
+    }
+
+
+
+    /*------------------
+        Articles map
+    ------------------*/
+    .articles_map .category .col
+    {
+        width: calc(50% - 35px);
+    }
+
+
+    .articles_map .category .items.columns
+    {
+        column-gap: 70px;
     }
 
 

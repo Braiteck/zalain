@@ -32,6 +32,16 @@
 
 
 
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title
+    {
+        margin-top: 40px;
+    }
+
+
+
     /*-------------
         Sidebar
     -------------*/
@@ -165,5 +175,49 @@
     {
         width: 100%;
         padding: 26px 23px 40px;
+    }
+
+
+
+    /*------------------
+        Articles map
+    ------------------*/
+    .articles_map .anchors
+    {
+        margin-bottom: 32px;
+        margin-left: -12px;
+    }
+
+    .articles_map .anchors > *
+    {
+        margin-left: 12px;
+    }
+
+
+    .articles_map .anchors > *.mob_full_w
+    {
+        width: calc(100% - 12px);
+    }
+
+
+    .articles_map .anchors .btn
+    {
+        padding: 9px 15px 8px;
+    }
+
+
+    .articles_map .categories
+    {
+        margin-bottom: -61px;
+    }
+
+    .articles_map .category
+    {
+        margin-bottom: 61px;
+    }
+
+    .articles_map .category .col + .col
+    {
+        margin-top: 61px;
     }
 }

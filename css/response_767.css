@@ -161,9 +161,27 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+    }
+
+
     .content .page_head
     {
         margin-bottom: 133px;
+    }
+
+
+    .page_head .bg
+    {
+        display: none;
+    }
+
+
+    .page_title
+    {
+        font-size: 46px;
     }
 
 
@@ -405,6 +423,46 @@
     {
         font-size: 30px;
         line-height: 40px;
+    }
+
+
+
+    /*------------------
+        Articles map
+    ------------------*/
+    .articles_map .anchors > *.mob_full_w
+    {
+        width: calc(100% - 16px);
+        margin-top: 10px;
+    }
+
+    .articles_map .anchors .all_btn
+    {
+        margin-left: 0;
+    }
+
+
+
+    .articles_map .category .col
+    {
+        width: 100%;
+    }
+
+    .articles_map .category .col + .col
+    {
+        margin-top: 79px;
+    }
+
+
+    .articles_map .category .items
+    {
+        font-size: 15px;
+    }
+
+    .articles_map .category .items.columns
+    {
+        column-gap: 0;
+        column-count: 1;
     }
 
 

@@ -45,6 +45,13 @@
     /*------------
         Header
     ------------*/
+    .header_wrap,
+    header
+    {
+        margin-bottom: 39px;
+    }
+
+
     header .logo img
     {
         height: 35px;
@@ -169,15 +176,34 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head,
     .content .page_head
     {
         margin-bottom: 76px;
     }
 
 
+    .page_head .bg
+    {
+        top: -10px;
+
+        width: 226px;
+        margin-right: -57px;
+    }
+
+
     .breadcrumbs .sep
     {
         margin: 0 8px;
+    }
+
+
+    .page_title
+    {
+        font-size: 52px;
+        line-height: 100%;
+
+        margin-top: 76px;
     }
 
 
@@ -593,6 +619,50 @@
         padding: 0;
 
         background: none;
+    }
+
+
+
+    /*------------------
+        Articles map
+    ------------------*/
+    .articles_map .anchors.bottom
+    {
+        padding-top: 83px;
+    }
+
+
+    .articles_map .categories
+    {
+        margin-bottom: -79px;
+    }
+
+
+    .articles_map .category
+    {
+        margin-bottom: 79px;
+    }
+
+
+    .articles_map .category .col
+    {
+        width: calc(50% - 61px);
+    }
+
+
+    .articles_map .category .items
+    {
+        font-size: 16px;
+    }
+
+    .articles_map .category .items.columns
+    {
+        column-gap: 122px;
+    }
+
+    .articles_map .category .items > * + *
+    {
+        margin-top: 15px;
     }
 
 

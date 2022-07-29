@@ -93,6 +93,28 @@ $(() => {
 			}
 		})
 	}
+
+
+	// Огловление
+	$('.articles_map .anchors .btn').click(function (e) {
+		e.preventDefault()
+
+		let btnIndex = $(this).parent().index()
+
+		$('.articles_map .anchors .btn').removeClass('active')
+		$('.articles_map .anchors > *:eq(' + btnIndex + ') .btn').addClass('active')
+		$('.articles_map .anchors.bottom > *:eq(' + btnIndex + ') .btn').addClass('active')
+
+		if ($(this).hasClass('all_btn')) {
+			$('.articles_map .category').fadeIn(300)
+			$('.articles_map .anchors.bottom').removeClass('hide')
+		} else {
+			$('.articles_map .category').hide()
+			$('.articles_map .category' + $(this).data('anchor')).show()
+
+			$('.articles_map .anchors.bottom').addClass('hide')
+		}
+	})
 })
 
 
