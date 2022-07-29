@@ -4,6 +4,13 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --sidebar_width: 289px;
+        --font_size: 16px;
+    }
+
+
     html.custom_scroll ::-webkit-scrollbar
     {
         width: 5px;
@@ -11,13 +18,26 @@
     }
 
 
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    body.menu_open
     {
-        padding: 32px;
+        width: 100%;
+    }
+
+
+    .cont
+    {
+        padding: 0 50px;
+    }
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 70px);
+    }
+
+    .content_flex .content.pad_top
+    {
+        padding-top: 38px;
     }
 
 
@@ -25,52 +45,581 @@
     /*------------
         Header
     ------------*/
+    header .logo img
+    {
+        height: 35px;
+    }
+
+
+    header .where_buy_link
+    {
+        margin-left: 115px;
+    }
+
+
+    header .where_buy_link a
+    {
+        font-size: 16px;
+
+        padding: 13px 32px 15px;
+
+        border-radius: 16px;
+    }
+
+
+    header .encyclopedia_link a
+    {
+        font-size: 19px;
+    }
+
+
+    header .menu_btn
+    {
+        margin-right: 0;
+    }
+
+
+
+    /*----------
+        Menu
+    ----------*/
+    .menu .line
+    {
+        margin-bottom: 56px;
+    }
+
+
+    .menu .links > * > a
+    {
+        font-size: 24px;
+
+        padding: 15px 0;
+    }
+
+
+    .menu .links .sub_links
+    {
+        width: calc(100vw - 100px - 167px - 53px);
+        margin-left: 53px;
+    }
+
+
+    .menu .links .sub_links .row
+    {
+        margin-bottom: -11px;
+        margin-left: -22px;
+    }
+
+    .menu .links .sub_links .row > *
+    {
+        margin-bottom: 11px;
+        margin-left: 22px;
+    }
+
+
+    .menu .links .sub_links a
+    {
+        font-size: 16px;
+
+        padding: 12px 30px 14px;
+    }
+
+
+    .menu .products
+    {
+        margin-top: 86px;
+    }
 
 
 
     /*-------------
         Sidebar
     -------------*/
+    aside .anchors
+    {
+        padding-top: 60px;
+        padding-left: 28px;
+    }
+
+
+    aside .anchors .title
+    {
+        margin-bottom: 37px;
+    }
+
+    aside .anchors .items > * + *
+    {
+        margin-top: 13px;
+    }
+
+
+    aside .anchors .items .btn
+    {
+        font-size: 14px;
+    }
+
+
+    aside .progress
+    {
+        margin-top: 48px;
+    }
 
 
 
     /*---------------
         Page head
     ---------------*/
+    .page_head
+    {
+        margin-bottom: 76px;
+    }
 
 
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
+    .breadcrumbs .sep
+    {
+        margin: 0 8px;
+    }
 
 
 
     /*----------------
         Typography
     ----------------*/
+    .text_block
+    {
+        line-height: 150%;
+    }
+
+
+    .text_block .section > *
+    {
+        margin-bottom: 26px;
+    }
+
+    .text_block .min_m
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 32px;
+
+        margin-bottom: 40px !important;
+    }
+
+    .text_block h3
+    {
+        font-size: 24px;
+    }
+
+    .text_block h2 + h3
+    {
+        margin-top: 56px !important;
+    }
+
+
+    .text_block .notice
+    {
+        font-size: 17px;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        background-position: 18px 50%;
+    }
+
+
+    .text_block .message
+    {
+        font-size: 17px;
+
+        margin-top: 38px;
+        margin-bottom: 38px;
+        padding: 32px 34px;
+    }
+
+
+    .text_block .items
+    {
+        font-size: 15px;
+
+        margin-left: -24px;
+    }
+
+    .text_block .items > *
+    {
+        width: calc(50% - 24px);
+        margin-left: 24px;
+    }
+
+
+
+    .text_block .features .label
+    {
+        font-size: 17px;
+
+        min-height: 61px;
+    }
+
+    .text_block .features .label + *
+    {
+        font-size: 15px;
+    }
+
+
+    .text_block .figures
+    {
+        margin-left: 142px !important;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 187px 0 114px;
+    }
+
+
+    .first_section .pre_title
+    {
+        font-size: 14px;
+
+        margin-bottom: 14px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 52px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 531px;
+        margin-top: 31px;
+    }
+
+
+    .first_section .btns
+    {
+        margin-top: 70px;
+        margin-bottom: -22px;
+        margin-left: -22px;
+    }
+
+    .first_section .btns > *
+    {
+        margin-bottom: 22px;
+        margin-left: 22px;
+    }
+
+
+    .first_section .btn
+    {
+        font-size: 16px;
+
+        padding: 12px 30px 14px;
+
+        border-radius: 16px;
+    }
+
+
+
+    /*----------------------
+        Featured article
+    ----------------------*/
+    .featured_article
+    {
+        width: 235px;
+        margin-left: 142px !important;
+    }
+
+
+    .featured_article .info
+    {
+        padding: 26px 24px 32px;
+    }
+
+
+    .featured_article .label
+    {
+        font-size: 12px;
+
+        margin-bottom: 8px;
+    }
+
+    .featured_article .name
+    {
+        font-size: 19px;
+    }
+
+    .featured_article .desc
+    {
+        font-size: 15px;
+    }
+
+
+    .featured_article .thumb
+    {
+        height: 99px;
+    }
 
 
 
     /*-----------------
-        Main slider
+        Zalain type
     -----------------*/
+    .zalain_type
+    {
+        padding: 64px 0;
+    }
+
+
+    .zalain_type .data
+    {
+        width: calc(100% - 291px);
+    }
+
+
+    .zalain_type .block_title
+    {
+        font-size: 38px;
+        line-height: 120%;
+
+        margin-bottom: 34px;
+    }
+
+    .zalain_type .block_title sup
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .zalain_type .pluses
+    {
+        margin-top: 30px;
+    }
+
+
+    .zalain_type .pluses .icon
+    {
+        width: 50px;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    .zalain_type .pluses .icon + *
+    {
+        width: calc(100% - 65px);
+    }
+
+
+    .zalain_type .btns
+    {
+        margin-top: 46px;
+        margin-bottom: -12px;
+        margin-left: -24px;
+    }
+
+    .zalain_type .btns > *
+    {
+        margin-bottom: 12px;
+        margin-left: 24px;
+    }
+
+
+    .zalain_type .btn
+    {
+        font-size: 16px;
+
+        padding: 12px 30px 13px;
+
+        border-radius: 16px;
+    }
+
+    .zalain_type .btn .icon
+    {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+    }
+
+
+    .zalain_type .data + .image
+    {
+        margin-top: 46px;
+        margin-right: -50px;
+        margin-left: 0;
+    }
+
+    .zalain_type .image
+    {
+        width: 312px;
+        margin-top: 70px;
+        margin-left: -30px;
+
+        align-self: flex-start;
+    }
+
+
+
+    /*----------------
+        Prevention
+    ----------------*/
+    .prevention
+    {
+        padding: 70px 0 75px;
+    }
+
+
+    .prevention .block_title
+    {
+        font-size: 32px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        padding: 60px 0 100px;
+    }
+
+
+    .articles .head
+    {
+        margin-bottom: 49px;
+    }
+
+
+    .articles .head .title
+    {
+        font-size: 32px;
+    }
+
+
+    .articles .all_link a
+    {
+        font-size: 16px;
+
+        padding: 14px 32px 16px;
+    }
+
+
+    .articles .row
+    {
+        margin-left: -34px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(50% - 34px);
+        margin-left: 34px;
+    }
+
+
+    .articles .article .thumb
+    {
+        width: 148px;
+        min-height: 183px;
+    }
+
+    .articles .article .thumb + *
+    {
+        width: calc(100% - 148px);
+        padding: 24px 23px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 19px;
+        line-height: 130%;
+    }
+
+    .articles .article .desc
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-------------
+        Sources
+    -------------*/
+    .sources
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .sources .spoler_btn
+    {
+        margin: 0;
+    }
+
+
+    .sources .items
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+
+    /*-----------------------
+        Contraiddications
+    -----------------------*/
+    .contraiddications
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .contraiddications .data
+    {
+        padding: 0;
+
+        background: none;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer
+    {
+        padding-bottom: 22px;
+    }
 
 
+    footer .col_left
+    {
+        width: 206px;
+    }
 
-    /*-----------
-        PopUp
-    -----------*/
+
+    footer .center
+    {
+        max-width: calc(100% - 561px);
+    }
+
+
+    footer .exp > * + *
+    {
+        margin-top: 6px;
+    }
 }

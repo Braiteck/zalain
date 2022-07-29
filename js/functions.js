@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Моб. версия
 	firstResize = false
 
-	if (document.body.clientWidth < 375) {
-		document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+	if (document.body.clientWidth < 320) {
+		document.getElementsByTagName('meta')['viewport'].content = 'width=320, user-scalable=no'
 
 		firstResize = true
 	}

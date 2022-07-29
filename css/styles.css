@@ -287,7 +287,7 @@ button
     overflow: hidden;
     flex-direction: column;
 
-    min-width: 375px;
+    min-width: 320px;
     min-height: 100%;
 
     background: var(--bg);
@@ -312,16 +312,14 @@ button
 }
 
 
-.lazyload,
-.swiper-lazy
+.lazyload
 {
     transition: opacity .5s linear;
 
     opacity: 0;
 }
 
-.lazyload.loaded,
-.swiper-lazy-loaded
+.lazyload.loaded
 {
     opacity: 1;
 }
@@ -337,6 +335,12 @@ button
     flex-wrap: wrap;
 }
 
+
+
+.content_flex
+{
+    position: relative;
+}
 
 
 .content_flex.row,
@@ -430,7 +434,6 @@ header
     left: 0;
 
     width: 100%;
-    margin-bottom: 29px;
     padding: 36px 0;
 
     transition: .2s linear;
@@ -473,7 +476,14 @@ header .logo img + img
 
 header .where_buy_link
 {
+    display: none;
+
     margin-left: 135px;
+}
+
+.menu_open header .where_buy_link
+{
+    display: block;
 }
 
 
@@ -488,7 +498,7 @@ header .where_buy_link a
     position: relative;
     z-index: 3;
 
-    display: none;
+    display: inline-block;
 
     padding: 13px 36px 16px;
 
@@ -500,11 +510,6 @@ header .where_buy_link a
     border: 1px solid #369b43;
     border-radius: 20px;
     background: #369b43;
-}
-
-.menu_open header .where_buy_link a
-{
-    display: inline-block;
 }
 
 header .where_buy_link a:before
@@ -685,7 +690,7 @@ header.fixed .encyclopedia_link a:hover,
 
     width: 100%;
     max-height: 100vh;
-    padding-top: 120px;
+    padding-top: 126px;
     padding-bottom: 54px;
 
     background: linear-gradient(180deg, #f3f2ed 0%, #fff 100%);
@@ -768,15 +773,26 @@ header.fixed .encyclopedia_link a:hover,
     top: 10px;
     left: 100%;
 
-    display: none;
+    visibility: hidden;
 
     width: calc(1107px - 167px - 87px);
     margin-left: 87px;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
 }
 
-.menu .links > *:hover .sub_links
+.menu .links > *:hover > a.touch_link + .sub_links,
+.menu .links > *:hover .sub_links,
+.menu .links > * > a.touch_link + .sub_links.show
 {
-    display: block;
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
 }
 
 .menu .links .sub_links:before
@@ -837,6 +853,71 @@ header.fixed .encyclopedia_link a:hover,
 }
 
 
+
+.menu .where_buy_link
+{
+    display: none;
+
+    margin-top: 23px;
+
+    text-align: center;
+}
+
+
+.menu .where_buy_link a
+{
+    color: #fff;
+    font-family: var(--font_family2);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+
+    position: relative;
+    z-index: 3;
+
+    display: inline-block;
+
+    padding: 13px 31px 15px;
+
+    transition: background .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+    letter-spacing: .01em;
+
+    border: 1px solid #369b43;
+    border-radius: 16px;
+    background: #369b43;
+}
+
+.menu .where_buy_link a:before
+{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: -8px;
+    left: 0;
+
+    display: block;
+
+    width: 135px;
+    height: 35px;
+    margin: auto;
+
+    content: '';
+
+    border-radius: 20px;
+    background: rgba(54, 155, 67, .69);
+
+    filter: blur(29px);
+}
+
+.menu .where_buy_link a:hover
+{
+    background: #1a8a28;
+}
+
+
+
 .menu .products
 {
     margin-top: 128px;
@@ -853,7 +934,6 @@ header.fixed .encyclopedia_link a:hover,
 
 .menu .products .row > *
 {
-    max-width: calc(33.333% - 24px);
     margin-bottom: 24px;
     margin-left: 24px;
 }
@@ -1533,6 +1613,11 @@ aside .progress .bar > *
     padding-top: 16px;
 }
 
+.text_block .section:first-child
+{
+    padding: 0;
+}
+
 .text_block .section + .section
 {
     margin-top: 86px;
@@ -1541,6 +1626,9 @@ aside .progress .bar > *
 
 .text_block .section > *
 {
+    position: relative;
+    z-index: 3;
+
     margin-bottom: 32px;
 }
 
@@ -1570,7 +1658,7 @@ aside .progress .bar > *
     font-weight: 700;
     line-height: 110%;
 
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
 }
 
 .text_block h3
@@ -1582,11 +1670,7 @@ aside .progress .bar > *
 }
 
 
-.text_block * + h2
-{
-    margin-top: 86px;
-}
-
+.text_block * + h2,
 .text_block * + h3
 {
     margin-top: 56px;
@@ -1600,6 +1684,13 @@ aside .progress .bar > *
 .text_block .figures + h3
 {
     margin-top: 0 !important;
+}
+
+
+.text_block .featured_article
+{
+    position: absolute;
+    z-index: 2;
 }
 
 
@@ -1685,6 +1776,11 @@ aside .progress .bar > *
     background: #369b43;
 }
 
+.text_block .items + .message
+{
+    margin-top: 12px;
+}
+
 
 .text_block .items
 {
@@ -1693,7 +1789,7 @@ aside .progress .bar > *
 
     display: flex;
 
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
     margin-left: -12px;
 
     justify-content: flex-start;
@@ -1946,7 +2042,8 @@ aside .progress .bar > *
 }
 
 
-.first_section .bg
+.first_section .bg,
+.first_section .mob_bg
 {
     position: absolute;
     z-index: -2;
@@ -1957,6 +2054,11 @@ aside .progress .bar > *
     height: 100%;
 
     object-fit: cover;
+}
+
+.first_section .mob_bg
+{
+    display: none;
 }
 
 
@@ -2045,7 +2147,7 @@ aside .progress .bar > *
     font-family: var(--font_family2);
     font-size: 19px;
     font-weight: 700;
-    line-height: 19px;
+    line-height: 100%;
 
     display: inline-block;
 

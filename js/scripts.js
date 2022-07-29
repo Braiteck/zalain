@@ -65,6 +65,34 @@ $(() => {
 		$('body').toggleClass('menu_open')
 		$('.menu').toggleClass('show')
 	})
+
+
+	if (is_touch_device()) {
+		// Подменю на тач скрине
+		$('.menu .links > * > a.sub_link').addClass('touch_link')
+
+		$('.menu .links > * > a.sub_link').click(function (e) {
+			const $dropdown = $(this).next()
+
+			if ($dropdown.css('visibility') === 'hidden') {
+				e.preventDefault()
+
+				$('.menu .links .sub_links').removeClass('show')
+				$dropdown.addClass('show')
+
+				$('body').css('cursor', 'pointer')
+			}
+		})
+
+		// Закрываем под. меню при клике за её пределами
+		$(document).click((e) => {
+			if ($(e.target).closest('.menu .links').length === 0) {
+				$('.menu .links .sub_links').removeClass('show')
+
+				$('body').css('cursor', 'default')
+			}
+		})
+	}
 })
 
 
@@ -128,7 +156,7 @@ $(window).on('resize', () => {
 		// Моб. версия
 		if (!firstResize) {
 			$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
-			if ($(window).width() < 375) $('meta[name=viewport]').attr('content', 'width=375, user-scalable=no')
+			if ($(window).width() < 320) $('meta[name=viewport]').attr('content', 'width=320, user-scalable=no')
 
 			firstResize = true
 		} else {

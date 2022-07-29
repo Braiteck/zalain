@@ -4,15 +4,21 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    .cont
     {
-        padding: 24px;
+        padding: 0 24px;
+    }
+
+
+    .content_flex .content
+    {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .content_flex .content.pad_top
+    {
+        padding-top: 19px;
     }
 
 
@@ -22,62 +28,149 @@
     ------------*/
     header
     {
-        position: fixed;
-        z-index: 101;
-        top: 0;
-        left: 0;
-
-        width: 310px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 0;
-
-        transition: transform .3s linear;
-        transform: translateX(-100%);
-
-        background: #fff;
+        padding: 26px 0;
     }
 
-    header.show
+
+    header .logo img
     {
-        transform: translateX(0);
+        height: 28px;
     }
 
 
-    header .mob_scroll
+    header .where_buy_link
+    {
+        margin-left: 165px;
+    }
+
+
+    header .encyclopedia_link a
+    {
+        font-size: 17px;
+    }
+
+
+    header .menu_btn
+    {
+        margin-left: 36px;
+    }
+
+
+
+    /*----------
+        Menu
+    ----------*/
+    .menu
+    {
+        padding-top: 106px;
+        padding-bottom: 29px;
+    }
+
+
+    .menu .line
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .menu .links
     {
         display: flex;
-        overflow: auto;
 
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        padding: 20px 0;
+        width: 100%;
+        margin-left: -35px;
 
         justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
+        align-items: center;
+        align-content: center;
         flex-wrap: wrap;
-        overscroll-behavior-y: contain;
     }
 
-    header .mob_scroll > *
+
+    .menu .links > *
+    {
+        width: auto;
+        margin-left: 35px;
+    }
+
+    .menu .links > * > a
+    {
+        padding: 0;
+    }
+
+    .menu .links > * > a .icon
+    {
+        width: 18px;
+        height: 18px;
+        margin-left: 10px;
+
+        transform: rotate(90deg);
+    }
+
+
+    .menu .links .sub_links
+    {
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+
+    .menu .links .sub_links .row
+    {
+        margin-bottom: -14px;
+        margin-left: 0;
+    }
+
+    .menu .links .sub_links .row > *
     {
         width: 100%;
+        margin-bottom: 14px;
+        margin-left: 0;
+    }
+
+    .menu .links .sub_links a
+    {
+        white-space: nowrap;
     }
 
 
-
-    /*-----------------
-        Mob. header
-    -----------------*/
-    .mob_header
+    .menu .products
     {
-        display: block;
+        margin-top: 274px;
+    }
+
+
+    .menu .products .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+    .menu .products .product .thumb
+    {
+        width: 112px;
+    }
+
+    .menu .products .product .thumb + *
+    {
+        width: calc(100% - 112px);
+    }
+
+
+    .menu .products .product .name
+    {
+        font-size: 15px;
+    }
+
+    .menu .products .product .desc
+    {
+        font-size: 13px;
+
+        margin-top: 6px;
     }
 
 
@@ -85,46 +178,329 @@
     /*-------------
         Sidebar
     -------------*/
+    aside
+    {
+        position: absolute;
+        top: 19px;
+        right: 0;
+
+        width: auto;
+    }
+
+
+
+    aside .anchors
+    {
+        display: none;
+
+        padding: 0;
+
+        border: none;
+    }
 
 
 
     /*---------------
         Page head
     ---------------*/
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
+    .page_head
+    {
+        margin-bottom: 85px;
+    }
 
 
 
     /*----------------
         Typography
     ----------------*/
+    .text_block h2
+    {
+        font-size: 28px;
+    }
+
+    .text_block h3
+    {
+        font-size: 24px;
+    }
+
+    .text_block h2 + h3
+    {
+        margin-top: 56px !important;
+    }
+
+
+
+    .text_block .featured_article
+    {
+        position: relative;
+
+        margin-top: 36px !important;
+    }
+
+
+    .text_block .figures
+    {
+        position: relative;
+        left: 0;
+
+        display: flex;
+
+        width: 100%;
+        margin-left: 0 !important;
+
+        box-shadow: none;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .text_block .figures figure
+    {
+        width: 224px;
+        max-width: calc(50% - 10px);
+    }
+
+    .text_block .figures > * + *
+    {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 156px 0 91px;
+    }
+
+
+    .first_section .data
+    {
+        padding: 0 40px;
+    }
+
+
+    .first_section .btns
+    {
+        margin-top: 46px;
+        margin-bottom: -18px;
+        margin-left: -18px;
+    }
+
+    .first_section .btns > *
+    {
+        margin-bottom: 18px;
+        margin-left: 18px;
+    }
+
+
+    .first_section .btn
+    {
+        padding: 12px 28px 14px;
+    }
+
+
+
+    /*----------------------
+        Featured article
+    ----------------------*/
+    .featured_article
+    {
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+
+        width: 500px;
+        max-width: 100%;
+        margin-left: 0 !important;
+
+        box-shadow: none;
+
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
+
+
+    .featured_article .info
+    {
+        width: calc(100% - 141px);
+        padding: 19px 29px 29px;
+    }
+
+
+    .featured_article .label
+    {
+        font-size: 12px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .featured_article .thumb
+    {
+        width: 141px;
+        height: auto;
+        min-height: 171px;
+
+        border-radius: 0 11px 11px 0;
+    }
 
 
 
     /*-----------------
-        Main slider
+        Zalain type
     -----------------*/
+    .zalain_type
+    {
+        padding: 64px 40px;
+    }
+
+
+    .zalain_type .data
+    {
+        width: calc(100% - 250px);
+    }
+
+
+    .zalain_type .pluses
+    {
+        margin-bottom: -3px;
+        margin-left: 0;
+    }
+
+    .zalain_type .pluses > *
+    {
+        width: 100%;
+        margin-bottom: 3px;
+        margin-left: 0;
+    }
+
+
+    .zalain_type .btns
+    {
+        margin-top: 40px;
+    }
+
+
+    .zalain_type .data + .image
+    {
+        margin-top: 80px;
+        margin-right: -64px;
+        margin-left: 0;
+    }
+
+    .zalain_type .image
+    {
+        width: 289px;
+        margin-top: 80px;
+        margin-left: -64px;
+    }
+
+
+
+    /*----------------
+        Prevention
+    ----------------*/
+    .prevention .block_title
+    {
+        font-size: 28px;
+
+        padding: 0 40px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .head
+    {
+        margin-bottom: 39px;
+    }
+
+
+    .articles .row
+    {
+        margin-left: 0;
+    }
+
+    .articles .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Sources
+    -------------*/
+    .sources
+    {
+        padding: 0 40px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer
+    {
+        padding: 0 40px 60px;
+    }
 
 
+    footer .col_left
+    {
+        width: 100%;
+    }
 
-    /*-----------
-        PopUp
-    -----------*/
+
+    footer .center
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 35px;
+    }
+
+
+    footer .exp > * + *
+    {
+        margin-top: 6px;
+    }
+
+
+    footer .egis
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        display: flex;
+
+        width: 100%;
+        margin-top: 35px;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .egis > * + *
+    {
+        width: 350px;
+        max-width: calc(100% - 246px);
+        margin-top: 0;
+        margin-left: 46px;
+    }
 }

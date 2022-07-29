@@ -4,68 +4,437 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    .cont
     {
-        padding: 20px;
+        padding: 0 30px;
+    }
+
+
+    .content_flex .content
+    {
+        padding: 0;
+    }
+
+    .content_flex .content.pad_top
+    {
+        padding-top: 32px;
     }
 
 
 
-    /*-----------------
-        Mob. header
-    -----------------*/
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 29px 0;
+    }
+
+
+    .menu_open header .where_buy_link
+    {
+        display: none;
+    }
+
+
+    header .menu_btn
+    {
+        margin-left: 70px;
+    }
+
+
+
+    /*----------
+        Menu
+    ----------*/
+    .menu
+    {
+        padding-top: 112px;
+        padding-bottom: 90px;
+    }
+
+
+    .menu .line
+    {
+        margin-bottom: 35px;
+    }
+
+
+    .menu .links
+    {
+        display: block;
+
+        margin-left: 0;
+    }
+
+
+    .menu .links > *
+    {
+        display: flex;
+
+        width: 100%;
+        margin-left: 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .menu .links > * > a
+    {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 12px 0;
+    }
+
+
+    .menu .links .sub_links,
+    .menu .links > *:hover > a.touch_link + .sub_links,
+    .menu .links > *:hover .sub_links
+    {
+        position: relative;
+        top: 0;
+
+        display: none;
+        visibility: hidden;
+
+        width: 100%;
+        margin-top: 8px;
+        padding-bottom: 22px;
+
+        text-align: center;
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+    .menu .links > * > a.touch_link + .sub_links.show
+    {
+        display: block;
+        visibility: visible;
+    }
+
+
+    .menu .links .sub_links .row
+    {
+        display: block;
+
+        margin-bottom: -14px;
+        margin-left: 0;
+    }
+
+    .menu .links .sub_links .row > *
+    {
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .menu .where_buy_link
+    {
+        display: block;
+    }
+
+
+    .menu .products
+    {
+        display: none;
+    }
 
 
 
     /*-------------
         Sidebar
     -------------*/
+    aside
+    {
+        position: absolute;
+        top: 19px;
+        right: 0;
+
+        width: auto;
+    }
+
+
+
+    aside .anchors
+    {
+        display: none;
+
+        padding: 0;
+
+        border: none;
+    }
 
 
 
     /*---------------
         Page head
     ---------------*/
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
-    /*------------------
-        Form elements
-    ------------------*/
+    .page_head
+    {
+        margin-bottom: 133px;
+    }
 
 
 
     /*----------------
         Typography
     ----------------*/
+    .text_block .section + .section
+    {
+        margin-top: 71px;
+    }
+
+
+    .text_block .items
+    {
+        margin-bottom: -8px;
+        margin-left: 0;
+    }
+
+    .text_block .items > *
+    {
+        width: 100%;
+        margin-bottom: 8px;
+        margin-left: 0;
+    }
+
+
+
+    .text_block .features .item + .item
+    {
+        margin-top: 24px;
+    }
+
+
+    .text_block .features .label
+    {
+        width: 100%;
+    }
+
+    .text_block .features .label + *
+    {
+        width: 100%;
+        padding: 20px 29px 19px;
+    }
+
+
+    .text_block .figures figure
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .text_block .figures > * + *
+    {
+        margin-top: 36px;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 175px 0 63px;
+    }
+
+
+    .first_section .data
+    {
+        padding: 0;
+    }
+
+
+    .first_section .pre_title
+    {
+        margin-bottom: 7px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 46px;
+        line-height: 52px;
+    }
+
+
+    .first_section .desc
+    {
+        margin-top: 21px;
+    }
+
+
+    .first_section .btns
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 60px);
+        margin: 58px -30px 0;
+        padding: 0 30px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .first_section .btns::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .first_section .btns::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .first_section .btns > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .first_section .btns > * + *
+    {
+        margin-left: 14px;
+    }
+
+
+    .first_section .bg
+    {
+        display: none;
+    }
+
+    .first_section .mob_bg
+    {
+        display: block;
+    }
 
 
 
     /*-----------------
-        Main slider
+        Zalain type
     -----------------*/
+    .zalain_type
+    {
+        padding: 64px 0;
+    }
+
+
+    .zalain_type .data
+    {
+        width: 100%;
+        margin-top: 30px;
+
+        order: 2;
+    }
+
+
+    .zalain_type .block_title
+    {
+        margin-bottom: 37px;
+
+        text-align: center;
+    }
+
+
+    .zalain_type .data + .image
+    {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .zalain_type .image
+    {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        Prevention
+    ----------------*/
+    .prevention .block_title
+    {
+        padding: 0;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .head
+    {
+        margin-bottom: 37px;
+    }
+
+
+    .articles .head .title
+    {
+        font-size: 28px;
+    }
+
+
+    .articles .all_link a
+    {
+        padding: 12px 30px 14px;
+    }
+
+
+
+    /*-------------
+        Sources
+    -------------*/
+    .sources
+    {
+        padding: 0;
+    }
+
+
+
+    /*-----------------------
+        Contraiddications
+    -----------------------*/
+    .contraiddications .title
+    {
+        font-size: 30px;
+        line-height: 40px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer
+    {
+        padding: 0 0 27px;
+    }
 
 
-
-    /*-----------
-        PopUp
-    -----------*/
+    footer .egis > * + *
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
 }
