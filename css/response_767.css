@@ -150,22 +150,10 @@
     -------------*/
     aside
     {
-        position: absolute;
-        top: 19px;
-        right: 0;
+        top: 74px;
+        right: 30px;
 
-        width: auto;
-    }
-
-
-
-    aside .anchors
-    {
-        display: none;
-
-        padding: 0;
-
-        border: none;
+        width: calc(100% - 60px);
     }
 
 

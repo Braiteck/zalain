@@ -18,7 +18,7 @@
 
     .content_flex .content.pad_top
     {
-        padding-top: 19px;
+        padding-top: 29px;
     }
 
 
@@ -182,11 +182,16 @@
     {
         position: absolute;
         top: 19px;
-        right: 0;
+        right: 24px;
 
         width: auto;
     }
 
+
+    aside .mob_anchors_btn
+    {
+        display: flex;
+    }
 
 
     aside .anchors

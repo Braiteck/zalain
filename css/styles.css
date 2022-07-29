@@ -1025,6 +1025,41 @@ aside
 
 
 
+aside .mob_anchors_btn
+{
+    color: #369b43;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+
+    display: none;
+
+    padding: 13px 23px 13px 26px;
+
+    letter-spacing: .01em;
+
+    border: 2px solid rgba(54, 155, 67, .83);
+    border-radius: 16px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+aside .mob_anchors_btn .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+
+    transform: rotate(90deg);
+}
+
+
+
 aside .anchors
 {
     padding-top: 39px;
