@@ -18,6 +18,11 @@ $(() => {
 			element.addEventListener('click', e => {
 				e.preventDefault()
 
+				if (e.target.localName == 'sup') {
+					$('.sources .spoler_btn').addClass('active')
+					$('.sources .items').show()
+				}
+
 				let anchor = element.getAttribute('data-anchor')
 
 				document.getElementById(anchor).scrollIntoView({
@@ -115,6 +120,10 @@ $(() => {
 			$('.articles_map .anchors.bottom').addClass('hide')
 		}
 	})
+
+
+	// Статья
+	calcPadding()
 })
 
 
@@ -149,6 +158,10 @@ $(window).resize(() => {
 			? $('header').addClass('fixed')
 			: $('header').removeClass('fixed')
 	}, 100)
+
+
+	// Статья
+	calcPadding()
 })
 
 
@@ -190,3 +203,11 @@ $(window).on('resize', () => {
 		WW = $(window).width()
 	}
 })
+
+
+
+const calcPadding = () => {
+	let firstSectionH = $('.first_section').outerHeight()
+
+	$('.wrap').css('padding-top', firstSectionH)
+}

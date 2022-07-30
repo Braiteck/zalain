@@ -278,6 +278,12 @@ button
 }
 
 
+sup
+{
+    cursor: pointer;
+}
+
+
 .wrap
 {
     position: relative;
@@ -419,6 +425,16 @@ button
 .supports_error.show
 {
     display: flex;
+}
+
+
+
+.bg_white
+{
+    position: relative;
+    z-index: 3;
+
+    background: var(--bg);
 }
 
 
@@ -684,10 +700,22 @@ header.fixed .logo img:last-child,
 }
 
 
-header.fixed.absolute .encyclopedia_link a,
+header.absolute .encyclopedia_link a,
 .menu_open header.absolute .encyclopedia_link a
 {
     color: #f9f7f7;
+}
+
+header.fixed.absolute .encyclopedia_link a,
+.menu_open header.absolute .encyclopedia_link a
+{
+    color: #369b43;
+}
+
+header.fixed.absolute .encyclopedia_link a:hover,
+.menu_open header.absolute .encyclopedia_link a:hover
+{
+    color: #1a8a28;
 }
 
 
@@ -1548,7 +1576,7 @@ aside .progress .bar > *
     display: flex;
 
     width: calc(100% - 207px);
-    padding: 19px 23px 19px 24px;
+    padding: 19px 24px 19px 30px;
 
     justify-content: flex-start;
     align-items: center;
@@ -1670,11 +1698,14 @@ aside .progress .bar > *
 -------------------*/
 .first_section
 {
-    position: relative;
-    z-index: 3;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
 
     overflow: hidden;
 
+    width: 100%;
     padding: 268px 0 237px;
 
     background: #ddd;
@@ -2581,19 +2612,25 @@ aside .progress .bar > *
 ----------------------*/
 .featured_article
 {
+    color: currentColor;
+
     position: absolute;
     z-index: 9;
     bottom: 0;
     left: 100%;
 
+    display: block;
+
     width: 278px;
     max-width: 100%;
     margin: 0 0 0 203px !important;
 
+    text-decoration: none;
+
     border: 1px solid #ebebeb;
     border-radius: 12px;
     background: #fff;
-    box-shadow: 0 0 70px 133px #fff;
+    box-shadow: 0 0 70px 160px #fff;
 }
 
 
@@ -2622,16 +2659,6 @@ aside .progress .bar > *
     line-height: 130%;
 }
 
-.featured_article .name a
-{
-    color: currentColor;
-
-    display: inline-block;
-
-    vertical-align: top;
-    text-decoration: none;
-}
-
 
 .featured_article .desc
 {
@@ -2646,7 +2673,6 @@ aside .progress .bar > *
 {
     position: relative;
 
-    display: block;
     overflow: hidden;
 
     width: calc(100% + 2px);
@@ -2717,8 +2743,8 @@ aside .progress .bar > *
 }
 
 
-.featured_article .thumb:hover:before,
-.featured_article .thumb:hover .icon
+.featured_article:hover .thumb:before,
+.featured_article:hover .thumb .icon
 {
     opacity: 1;
 }
@@ -2907,7 +2933,12 @@ aside .progress .bar > *
 ------------*/
 footer
 {
+    position: relative;
+    z-index: 3;
+
     padding-bottom: 18px;
+
+    background: var(--bg);
 }
 
 

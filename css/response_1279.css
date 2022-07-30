@@ -292,6 +292,9 @@
     .text_block .features .label + *
     {
         font-size: 15px;
+
+        padding-right: 23px;
+        padding-left: 27px;
     }
 
 
