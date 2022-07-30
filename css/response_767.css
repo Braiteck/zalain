@@ -359,6 +359,12 @@
     }
 
 
+    .zalain_type .btn:before
+    {
+        filter: blur(37px);
+    }
+
+
     .zalain_type .data + .image
     {
         margin-top: 0;

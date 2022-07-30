@@ -144,6 +144,11 @@
         padding-left: 29px;
     }
 
+    .zalain_type .btn:before
+    {
+        filter: blur(50px);
+    }
+
 
 
     /*--------------
