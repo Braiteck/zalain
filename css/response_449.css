@@ -126,7 +126,7 @@
 
     .featured_article .thumb
     {
-        width: 100%;
+        width: calc(100% + 2px);
         height: 99px;
         min-height: 99px;
 
