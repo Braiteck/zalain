@@ -2312,8 +2312,12 @@ aside .progress .bar > *
 
 .articles .article
 {
+    color: currentColor;
+
     display: flex;
     overflow: hidden;
+
+    text-decoration: none;
 
     border-radius: 8px;
     background: linear-gradient(95.28deg, #fff 1.45%, rgba(243, 242, 237, .42) 104.71%);
@@ -2328,17 +2332,12 @@ aside .progress .bar > *
 
 .articles .article .thumb
 {
-    color: currentColor;
-
     position: relative;
 
-    display: block;
     overflow: hidden;
 
     width: 174px;
     min-height: 197px;
-
-    text-decoration: none;
 
     border-radius: 8px 0 0 8px;
     background: #ddd;
@@ -2414,16 +2413,6 @@ aside .progress .bar > *
     font-size: 22px;
     font-weight: 600;
     line-height: 125%;
-}
-
-.articles .article .name a
-{
-    color: currentColor;
-
-    display: inline-block;
-
-    vertical-align: top;
-    text-decoration: none;
 }
 
 
