@@ -405,6 +405,31 @@
     }
 
 
+    .articles .row > *,
+    .articles .row > *:first-child
+    {
+        float: none;
+
+        width: 100%;
+    }
+
+
+    .articles .row > *:first-child .thumb
+    {
+        width: 148px;
+        height: auto;
+        min-height: 183px;
+
+        border-radius: 8px 0 0 8px;
+    }
+
+    .articles .row > *:first-child .thumb + *
+    {
+        width: calc(100% - 148px);
+        padding: 24px 23px;
+    }
+
+
 
     /*-------------
         Sources

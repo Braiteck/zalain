@@ -2312,7 +2312,7 @@ aside .progress .bar > *
 
 .articles .article
 {
-    color: currentColor;
+    color: var(--text_color);
 
     display: flex;
     overflow: hidden;
@@ -2601,7 +2601,7 @@ aside .progress .bar > *
 ----------------------*/
 .featured_article
 {
-    color: currentColor;
+    color: var(--text_color);
 
     position: absolute;
     z-index: 9;

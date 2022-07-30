@@ -164,14 +164,16 @@
     }
 
 
-    .articles .article .thumb
+    .articles .article .thumb,
+    .articles .row > *:first-child .thumb
     {
         width: 100%;
         height: 99px;
         min-height: 99px;
     }
 
-    .articles .article .thumb + *
+    .articles .article .thumb + *,
+    .articles .row > *:first-child .thumb + *
     {
         width: 100%;
         padding: 26px 23px 40px;
