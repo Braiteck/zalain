@@ -174,13 +174,15 @@ $(window).scroll(() => {
 
 
 	// Прогресс кролла
-	let pixels = $(window).scrollTop() - $('.article_info').offset().top,
-		articleHeight = $('.article_info').height(),
-		progress = 100 * pixels / articleHeight
+	if ($('.article_info').length) {
+		let pixels = $(window).scrollTop() - $('.article_info').offset().top,
+			articleHeight = $('.article_info').height(),
+			progress = 100 * pixels / articleHeight
 
-	if (progress >= 0 && progress <= 100 && progress > $('aside .progress .val span').text()) {
-		$('aside .progress .bar > *').css('width', progress + '%')
-		$('aside .progress .val span').text(progress.toFixed(0))
+		if (progress >= 0 && progress <= 100 && progress > $('aside .progress .val span').text()) {
+			$('aside .progress .bar > *').css('width', progress + '%')
+			$('aside .progress .val span').text(progress.toFixed(0))
+		}
 	}
 })
 
@@ -207,7 +209,9 @@ $(window).on('resize', () => {
 
 
 const calcPadding = () => {
-	let firstSectionH = $('.first_section').outerHeight()
+	if ($('.first_section').length) {
+		let firstSectionH = $('.first_section').outerHeight()
 
-	$('.wrap').css('padding-top', firstSectionH)
+		$('.wrap').css('padding-top', firstSectionH)
+	}
 }
