@@ -156,7 +156,7 @@ $(window).on('load', () => {
 				src: '#discount_modal',
 				type: 'inline'
 			}])
-		}, 500)
+		}, 5000)
 
 		$('#discount_modal .stock .btn').click(function (e) {
 			e.preventDefault()
