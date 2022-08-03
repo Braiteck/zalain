@@ -16,6 +16,16 @@
 
 
 
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 12px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -226,5 +236,57 @@
     .articles_map .category .col + .col
     {
         margin-top: 61px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #discount_modal
+    {
+        width: 290px;
+    }
+
+
+    #discount_modal .row
+    {
+        padding: 13px 37px 26px;
+    }
+
+
+    #discount_modal .data
+    {
+        width: 100%;
+
+        order: 2;
+    }
+
+
+    #discount_modal .stock
+    {
+        padding: 0 33px 13px 34px;
+    }
+
+
+    #discount_modal .stock .info
+    {
+        top: 53px;
+        left: 5px;
+
+        width: calc(100% - 31px);
+        padding: 33px 20px;
+    }
+
+    #discount_modal .stock .info .logo
+    {
+        width: 63px;
+        height: 66px;
+    }
+
+
+    #discount_modal .exp
+    {
+        padding: 0 13px 10px 12px;
     }
 }

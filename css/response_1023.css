@@ -23,6 +23,16 @@
 
 
 
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -573,5 +583,114 @@
         max-width: calc(100% - 246px);
         margin-top: 0;
         margin-left: 46px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #discount_modal
+    {
+        width: 386px;
+    }
+
+
+    #discount_modal .row
+    {
+        padding: 13px 85px 40px;
+    }
+
+
+    #discount_modal .image
+    {
+        width: 186px;
+        height: 83px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+
+
+    #discount_modal .data
+    {
+        width: 100%;
+
+        order: 2;
+    }
+
+
+    #discount_modal .stock
+    {
+        display: block;
+
+        padding: 0 28px 13px 21px;
+
+        text-align: center;
+    }
+
+    #discount_modal .stock > div:first-child
+    {
+        width: 100%;
+    }
+
+
+    #discount_modal .stock .info
+    {
+        top: 52px;
+
+        width: calc(100% - 42px);
+        padding: 58px 20px;
+    }
+
+    #discount_modal .stock .info .logo
+    {
+        margin: 0 auto 23px;
+    }
+
+    #discount_modal .stock .info .logo + *
+    {
+        width: 100%;
+    }
+
+
+    #discount_modal .stock .btn
+    {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+
+        width: 183px;
+        height: 32px;
+        margin: 7px auto 0;
+
+        background-size: 100% 100%;
+    }
+
+
+    #discount_modal .license
+    {
+        bottom: 10px;
+        left: 4px;
+    }
+
+
+    #discount_modal .exp
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 0 28px 10px 21px;
+
+        letter-spacing: -.03em;
+    }
+
+
+
+    #discount_modal.disclosed .image
+    {
+        pointer-events: auto;
+
+        opacity: 1;
     }
 }
