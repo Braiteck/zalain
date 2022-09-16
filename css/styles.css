@@ -177,14 +177,12 @@ input[type=number]
 ::selection
 {
     color: #fff;
-
     background: #369b43;
 }
 
 ::-moz-selection
 {
     color: #fff;
-
     background: #369b43;
 }
 
@@ -236,13 +234,14 @@ html.custom_scroll
 
 body
 {
-    color: var(--text_color);
     font: var(--font_size) var(--font_family);
 
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    color: var(--text_color);
 }
 
 body.menu_open
@@ -263,7 +262,6 @@ body.menu_open
 
 button
 {
-    color: inherit;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -274,6 +272,7 @@ button
     cursor: pointer;
     vertical-align: top;
 
+    color: inherit;
     border: none;
     background: none;
 }
@@ -304,9 +303,8 @@ sup
 .main
 {
     display: flex;
-    flex-direction: column;
-
     flex: 1 0 auto;
+    flex-direction: column;
 }
 
 
@@ -335,11 +333,10 @@ sup
 .row
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -353,9 +350,9 @@ sup
 .content_flex.row,
 .content_flex > .cont.row
 {
-    justify-content: space-between;
-    align-items: stretch;
     align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 
@@ -408,6 +405,10 @@ sup
     left: 0;
 
     display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
@@ -416,11 +417,6 @@ sup
     text-align: center;
 
     background: #fff;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .supports_error.show
@@ -498,20 +494,20 @@ header.absolute
 
 header .cont
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 
 header .logo
 {
-    color: currentColor;
-
     display: block;
 
     text-decoration: none;
+
+    color: currentColor;
 }
 
 header .logo img
@@ -540,7 +536,6 @@ header .where_buy_link
 
 header .where_buy_link a
 {
-    color: #fff;
     font-family: var(--font_family2);
     font-size: 19px;
     font-weight: 700;
@@ -558,6 +553,7 @@ header .where_buy_link a
     text-decoration: none;
     letter-spacing: .01em;
 
+    color: #fff;
     border: 1px solid #369b43;
     border-radius: 20px;
     background: #369b43;
@@ -600,22 +596,22 @@ header .encyclopedia_link
 
 header .encyclopedia_link a
 {
-    color: #369b43;
     font-family: var(--font_family2);
     font-size: 21px;
     font-weight: 700;
     line-height: 54px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     transition: color .2s linear;
     text-decoration: none;
     text-transform: uppercase;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #369b43;
 }
 
 header .encyclopedia_link a:hover
@@ -637,9 +633,11 @@ header .encyclopedia_link .icon
 
 header .menu_btn
 {
-    color: #fff;
-
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 51px;
     height: 51px;
@@ -648,13 +646,9 @@ header .menu_btn
 
     transition: background .2s linear;
 
+    color: #fff;
     border-radius: 15px;
     background: #369b43;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -790,23 +784,23 @@ header.fixed.absolute .encyclopedia_link a:hover,
 
 .menu .links > * > a
 {
-    color: #000;
     font-family: var(--font_family2);
     font-size: 26px;
     font-weight: 700;
     line-height: 120%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     padding: 20px 0;
 
     transition: .2s linear;
     text-decoration: none;
 
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #000;
 }
 
 .menu .links > * > a .icon
@@ -887,7 +881,6 @@ header.fixed.absolute .encyclopedia_link a:hover,
 
 .menu .links .sub_links a
 {
-    color: #369b43;
     font-family: var(--font_family2);
     font-size: 19px;
     font-weight: 700;
@@ -902,6 +895,7 @@ header.fixed.absolute .encyclopedia_link a:hover,
     text-decoration: none;
     letter-spacing: .01em;
 
+    color: #369b43;
     border: 2px solid rgba(54, 155, 67, .82);
     border-radius: 20px;
 }
@@ -909,7 +903,6 @@ header.fixed.absolute .encyclopedia_link a:hover,
 .menu .links .sub_links a:hover
 {
     color: #fff;
-
     border-color: #369b43;
     background: #369b43;
 }
@@ -928,7 +921,6 @@ header.fixed.absolute .encyclopedia_link a:hover,
 
 .menu .where_buy_link a
 {
-    color: #fff;
     font-family: var(--font_family2);
     font-size: 16px;
     font-weight: 700;
@@ -946,6 +938,7 @@ header.fixed.absolute .encyclopedia_link a:hover,
     text-decoration: none;
     letter-spacing: .01em;
 
+    color: #fff;
     border: 1px solid #369b43;
     border-radius: 16px;
     background: #369b43;
@@ -988,10 +981,10 @@ header.fixed.absolute .encyclopedia_link a:hover,
 
 .menu .products .row
 {
+    justify-content: space-between;
+
     margin-bottom: -24px;
     margin-left: -24px;
-
-    justify-content: space-between;
 }
 
 .menu .products .row > *
@@ -1004,25 +997,23 @@ header.fixed.absolute .encyclopedia_link a:hover,
 .menu .products .product
 {
     display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
 .menu .products .product .thumb
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 120px;
     height: 90px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .menu .products .product .thumb img
@@ -1036,20 +1027,21 @@ header.fixed.absolute .encyclopedia_link a:hover,
 
 .menu .products .product .name
 {
-    color: #369b43;
     font-size: 17px;
     font-weight: 500;
     line-height: 140%;
+
+    color: #369b43;
 }
 
 .menu .products .product .name a
 {
-    color: currentColor;
-
     display: inline-block;
 
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .menu .products .product .name sup
@@ -1089,24 +1081,23 @@ aside
 
 aside .mob_anchors_btn
 {
-    color: #369b43;
     font-size: 16px;
     font-weight: 700;
     line-height: 100%;
 
     display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     padding: 13px 23px 13px 26px;
 
     letter-spacing: .01em;
 
+    color: #369b43;
     border: 2px solid rgba(54, 155, 67, .83);
     border-radius: 16px;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 aside .mob_anchors_btn .icon
@@ -1171,12 +1162,13 @@ aside .anchors .items .btn:hover
 
 aside .progress
 {
-    color: #5e5a5a;
     font-size: 12px;
     font-weight: 300;
     line-height: 160%;
 
     margin-top: 37px;
+
+    color: #5e5a5a;
 }
 
 
@@ -1238,19 +1230,20 @@ aside .progress .bar > *
 
 .breadcrumbs
 {
-    color: currentColor;
     font-size: 14px;
     font-weight: 300;
     line-height: 160%;
+
+    color: currentColor;
 }
 
 
 .breadcrumbs a
 {
-    color: currentColor;
-
     transition: color .2s linear;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .breadcrumbs a:hover
@@ -1448,13 +1441,13 @@ aside .progress .bar > *
 
 .text_block .notice
 {
-    color: var(--text_color);
     font-size: 18px;
     font-weight: 400;
     line-height: 130%;
 
     padding: 24px 50px 24px 86px;
 
+    color: var(--text_color);
     border-top: 1px solid #f2f1ec;
     border-bottom: 1px solid #f2f1ec;
     background: url(../images/ic_notice.svg) 24px 50% no-repeat;
@@ -1463,7 +1456,6 @@ aside .progress .bar > *
 
 .text_block .message
 {
-    color: #fff;
     font-size: 18px;
     line-height: 140%;
 
@@ -1471,6 +1463,7 @@ aside .progress .bar > *
     margin-bottom: 44px;
     padding: 36px;
 
+    color: #fff;
     border-radius: 16px;
     background: #369b43;
 }
@@ -1487,43 +1480,40 @@ aside .progress .bar > *
     line-height: 130%;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: 20px !important;
     margin-left: -12px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .text_block .items > *
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: calc(50% - 12px);
     margin-bottom: 12px;
     margin-left: 12px;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .text_block .items .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 50px;
     height: 50px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .text_block .items .icon img
@@ -1536,9 +1526,9 @@ aside .progress .bar > *
 
 .text_block .items .icon + *
 {
-    width: calc(100% - 65px);
-
     align-self: center;
+
+    width: calc(100% - 65px);
 }
 
 
@@ -1550,25 +1540,27 @@ aside .progress .bar > *
 .text_block .features .item
 {
     display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     border: 1px solid #369b43;
     border-radius: 16px;
-
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: wrap;
 }
 
 
 .text_block .features .label
 {
-    color: #fff;
     font-size: 18px;
     font-weight: 600;
     line-height: 140%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 207px;
     max-width: 100%;
@@ -1576,13 +1568,9 @@ aside .progress .bar > *
 
     text-align: center;
 
+    color: #fff;
     border-radius: 16px;
     background: #369b43;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .text_block .features .label + *
@@ -1591,14 +1579,13 @@ aside .progress .bar > *
     line-height: 130%;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: calc(100% - 207px);
     padding: 19px 24px 19px 30px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .text_block .features .label + * > *
@@ -1655,22 +1642,20 @@ aside .progress .bar > *
 
 .text_block .figures .image
 {
-    color: currentColor;
-
     position: relative;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     height: 244px;
 
     text-decoration: none;
 
+    color: currentColor;
     background: #f2f1ec;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 
@@ -1685,8 +1670,6 @@ aside .progress .bar > *
 
 .text_block .figures .image .icon
 {
-    color: rgba(54, 155, 67, .76);
-
     position: absolute;
     z-index: 3;
     right: 18px;
@@ -1696,6 +1679,8 @@ aside .progress .bar > *
 
     width: 28px;
     height: 28px;
+
+    color: rgba(54, 155, 67, .76);
 }
 
 
@@ -1772,7 +1757,6 @@ aside .progress .bar > *
 
 .first_section .pre_title
 {
-    color: #f4f4f4;
     font-size: 16px;
     font-weight: 300;
     line-height: 150%;
@@ -1784,6 +1768,7 @@ aside .progress .bar > *
 
     vertical-align: top;
 
+    color: #f4f4f4;
     border-radius: 11px;
     background: #369b43;
 }
@@ -1825,15 +1810,14 @@ aside .progress .bar > *
 .first_section .btns
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 64px;
     margin-bottom: -35px;
     margin-left: -35px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .first_section .btns > *
@@ -1845,7 +1829,6 @@ aside .progress .bar > *
 
 .first_section .btn
 {
-    color: #f3f7f4;
     font-family: var(--font_family2);
     font-size: 19px;
     font-weight: 700;
@@ -1860,6 +1843,7 @@ aside .progress .bar > *
     text-decoration: none;
     letter-spacing: .01em;
 
+    color: #f3f7f4;
     border: 2px solid rgba(255, 255, 255, .82);
     border-radius: 20px;
 }
@@ -1867,7 +1851,6 @@ aside .progress .bar > *
 .first_section .btn:hover
 {
     color: #fff;
-
     border-color: #369b43;
     background: #369b43;
 }
@@ -1938,13 +1921,14 @@ aside .progress .bar > *
 
 .zalain_type .block_title
 {
-    color: #369b43;
     font-family: var(--font_family2);
     font-size: 50px;
     font-weight: 700;
     line-height: 54px;
 
     margin-bottom: 40px;
+
+    color: #369b43;
 }
 
 .zalain_type .block_title sup
@@ -1977,45 +1961,42 @@ aside .progress .bar > *
     line-height: 140%;
 
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 51px;
     margin-bottom: -18px;
     margin-left: -18px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .zalain_type .pluses > *
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: calc(50% - 18px);
     margin-bottom: 18px;
     margin-left: 18px;
-
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 
 .zalain_type .pluses .icon
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     width: 78px;
     height: 55px;
     margin-left: -9px;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .zalain_type .pluses .icon img
@@ -2028,9 +2009,9 @@ aside .progress .bar > *
 
 .zalain_type .pluses .icon + *
 {
-    width: calc(100% - 80px);
-
     align-self: center;
+
+    width: calc(100% - 80px);
 }
 
 
@@ -2048,15 +2029,14 @@ aside .progress .bar > *
 .zalain_type .btns
 {
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-top: 62px;
     margin-bottom: -15px;
     margin-left: -30px;
-
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .zalain_type .btns > *
@@ -2068,7 +2048,6 @@ aside .progress .bar > *
 
 .zalain_type .btn
 {
-    color: #fff;
     font-family: var(--font_family2);
     font-size: 19px;
     font-weight: 700;
@@ -2078,20 +2057,20 @@ aside .progress .bar > *
     z-index: 3;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     padding: 13px 36px 14px;
 
     transition: .2s linear;
     letter-spacing: .01em;
 
+    color: #fff;
     border: 2px solid rgba(54, 155, 67, .83);
     border-radius: 20px;
     background: #369b43;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .zalain_type .btn:before
@@ -2143,7 +2122,6 @@ aside .progress .bar > *
 .zalain_type .btn.border
 {
     color: #369b43;
-
     background: none;
 }
 
@@ -2155,17 +2133,16 @@ aside .progress .bar > *
 .zalain_type .btn.border:hover
 {
     color: #fff;
-
     background: #369b43;
 }
 
 
 .zalain_type .image
 {
+    align-self: center;
+
     width: 456px;
     max-width: 100%;
-
-    align-self: center;
 }
 
 .zalain_type .image img
@@ -2227,13 +2204,12 @@ aside .progress .bar > *
 .articles .head
 {
     display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: 47px;
-
-    justify-content: flex-start;
-    align-items: flex-end;
-    align-content: flex-end;
-    flex-wrap: wrap;
 }
 
 
@@ -2254,7 +2230,6 @@ aside .progress .bar > *
 
 .articles .all_link a
 {
-    color: #fff;
     font-family: var(--font_family2);
     font-size: 19px;
     font-weight: 700;
@@ -2264,6 +2239,10 @@ aside .progress .bar > *
     z-index: 3;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     padding: 13px 36px 14px;
 
@@ -2271,14 +2250,10 @@ aside .progress .bar > *
     text-decoration: none;
     letter-spacing: .01em;
 
+    color: #fff;
     border: 2px solid rgba(54, 155, 67, .83);
     border-radius: 20px;
     background: #369b43;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 .articles .all_link a:before
@@ -2312,11 +2287,11 @@ aside .progress .bar > *
 
 .articles .row
 {
+    align-content: stretch;
+    align-items: stretch;
+
     margin-bottom: -30px;
     margin-left: -30px;
-
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .articles .row > *
@@ -2329,21 +2304,19 @@ aside .progress .bar > *
 
 .articles .article
 {
-    color: var(--text_color);
-
     display: flex;
     overflow: hidden;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     text-decoration: none;
 
+    color: var(--text_color);
     border-radius: 8px;
     background: linear-gradient(95.28deg, #fff 1.45%, rgba(243, 242, 237, .42) 104.71%);
     box-shadow: 1px 2px 4px rgba(151, 146, 131, .19);
-
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
-    flex-wrap: wrap;
 }
 
 
@@ -2403,8 +2376,6 @@ aside .progress .bar > *
 
 .articles .article .thumb .icon
 {
-    color: #fff;
-
     position: absolute;
     z-index: 3;
     top: 0;
@@ -2421,15 +2392,17 @@ aside .progress .bar > *
     transition: opacity .2s linear;
 
     opacity: 0;
+    color: #fff;
 }
 
 
 .articles .article .name
 {
-    color: #292926;
     font-size: 22px;
     font-weight: 600;
     line-height: 125%;
+
+    color: #292926;
 }
 
 
@@ -2472,22 +2445,22 @@ aside .progress .bar > *
 
 .sources .spoler_btn
 {
-    color: #369b43;
     font-family: var(--font_family2);
     font-size: 21px;
     font-weight: 700;
     line-height: 18px;
 
     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin: 0 32px;
 
     transition: color .2s linear;
 
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    color: #369b43;
 }
 
 
@@ -2603,12 +2576,13 @@ aside .progress .bar > *
 
 .contraiddications .title
 {
-    color: #369b43;
     font-family: var(--font_family2);
     font-size: 34px;
     line-height: 46px;
 
     text-align: center;
+
+    color: #369b43;
 }
 
 
@@ -2618,8 +2592,6 @@ aside .progress .bar > *
 ----------------------*/
 .featured_article
 {
-    color: var(--text_color);
-
     position: absolute;
     z-index: 9;
     bottom: 0;
@@ -2633,6 +2605,7 @@ aside .progress .bar > *
 
     text-decoration: none;
 
+    color: var(--text_color);
     border: 1px solid #ebebeb;
     border-radius: 12px;
     background: #fff;
@@ -2648,21 +2621,23 @@ aside .progress .bar > *
 
 .featured_article .label
 {
-    color: #96c68a;
     font-size: 14px;
     font-weight: 300;
     line-height: 150%;
 
     margin-bottom: 12px;
+
+    color: #96c68a;
 }
 
 
 .featured_article .name
 {
-    color: #292926;
     font-size: 22px;
     font-weight: 600;
     line-height: 130%;
+
+    color: #292926;
 }
 
 
@@ -2711,8 +2686,6 @@ aside .progress .bar > *
 
 .featured_article .thumb .icon
 {
-    color: #fff;
-
     position: absolute;
     z-index: 3;
     top: 0;
@@ -2729,6 +2702,7 @@ aside .progress .bar > *
     transition: opacity .2s linear;
 
     opacity: 0;
+    color: #fff;
 }
 
 
@@ -2763,14 +2737,13 @@ aside .progress .bar > *
 .articles_map .anchors
 {
     display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin-bottom: 39px;
     margin-left: -16px;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .articles_map .anchors.bottom
@@ -2838,7 +2811,6 @@ aside .progress .bar > *
 .articles_map .anchors .btn.active
 {
     color: #fff;
-
     background: #369b43;
 }
 
@@ -2918,13 +2890,13 @@ aside .progress .bar > *
 
 .articles_map .category .items a
 {
-    color: currentColor;
-
     display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
     text-decoration: none;
+
+    color: currentColor;
 }
 
 .articles_map .category .items a:hover
@@ -3013,10 +2985,10 @@ footer .center > * + *
 
 footer .contacts a
 {
-    color: #369b43;
-
     white-space: nowrap;
     text-decoration: none;
+
+    color: #369b43;
 }
 
 
@@ -3029,12 +3001,13 @@ footer .exp
 
 footer .egis
 {
-    color: rgba(0, 0, 0, .6);
     font-size: 14px;
     line-height: 18px;
 
     width: 200px;
     max-width: 100%;
+
+    color: rgba(0, 0, 0, .6);
 }
 
 footer .egis > * + *
