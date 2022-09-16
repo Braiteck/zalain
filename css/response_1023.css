@@ -83,14 +83,13 @@
     .menu .links
     {
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         width: 100%;
         margin-left: -35px;
-
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
 
@@ -245,17 +244,6 @@
         font-size: 28px;
     }
 
-    .text_block h3
-    {
-        font-size: 24px;
-    }
-
-    .text_block h2 + h3
-    {
-        margin-top: 56px !important;
-    }
-
-
 
     .text_block .featured_article
     {
@@ -271,16 +259,15 @@
         left: 0;
 
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         width: 100%;
         margin-left: 0 !important;
 
         box-shadow: none;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     .text_block .figures figure
@@ -343,17 +330,16 @@
         left: 0;
 
         display: flex;
+        align-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         width: 500px;
         max-width: 100%;
         margin-left: 0 !important;
 
         box-shadow: none;
-
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: stretch;
-        flex-wrap: wrap;
     }
 
 
@@ -557,14 +543,13 @@
         line-height: 18px;
 
         display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         width: 100%;
         margin-top: 35px;
-
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
     }
 
     footer .egis > * + *

@@ -81,14 +81,13 @@
     .menu .links > *
     {
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         width: 100%;
         margin-left: 0;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     .menu .links > * > a
@@ -219,6 +218,11 @@
     }
 
 
+    .text_block .notice
+    {
+        padding-right: 0;
+    }
+
 
     .text_block .features .item + .item
     {
@@ -248,6 +252,27 @@
     {
         margin-top: 36px;
         margin-left: 0;
+    }
+
+
+    .text_block .message
+    {
+        padding: 28px;
+    }
+
+
+    .text_block .table_wrap
+    {
+        width: calc(100% + 60px);
+        max-width: calc(100% + 60px);
+        margin-right: -30px;
+        margin-left: -30px;
+        padding: 0 30px;
+    }
+
+    .text_block table
+    {
+        width: 640px;
     }
 
 
@@ -354,10 +379,10 @@
 
     .zalain_type .data
     {
+        order: 2;
+
         width: 100%;
         margin-top: 30px;
-
-        order: 2;
     }
 
 

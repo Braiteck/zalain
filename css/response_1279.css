@@ -240,9 +240,9 @@
         font-size: 24px;
     }
 
-    .text_block h2 + h3
+    .text_block h4
     {
-        margin-top: 56px !important;
+        font-size: 21px;
     }
 
 
@@ -281,7 +281,6 @@
     }
 
 
-
     .text_block .features .label
     {
         font-size: 17px;
@@ -301,6 +300,13 @@
     .text_block .figures
     {
         margin-left: 142px !important;
+    }
+
+
+    .text_block table th,
+    .text_block table td
+    {
+        padding: 12px 11px;
     }
 
 
@@ -493,11 +499,11 @@
 
     .zalain_type .image
     {
+        align-self: flex-start;
+
         width: 312px;
         margin-top: 70px;
         margin-left: -30px;
-
-        align-self: flex-start;
     }
 
 
