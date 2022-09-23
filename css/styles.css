@@ -1806,6 +1806,8 @@ aside .progress .bar > *
 
     text-align: center;
     vertical-align: middle;
+
+    border-bottom: 1px solid #f2f1ec;
 }
 
 
@@ -2127,6 +2129,15 @@ aside .progress .bar > *
     align-self: center;
 
     width: calc(100% - 80px);
+}
+
+
+.zalain_type .pluses .exp
+{
+    font-size: 10px;
+    line-height: 140%;
+
+    margin-top: 5px;
 }
 
 
